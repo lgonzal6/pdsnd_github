@@ -168,7 +168,7 @@ def station_stats(df):
 
     # display most frequent combination of start station and end station trip
     start_combo, end_combo = df.groupby('Start Station')['End Station'].value_counts().idxmax()
-    print('The most requent combination of start station and end station trip is\
+    print('\nThe most frequent combination of start station and end station trip is\
  between the {} station and the {} station'.format(start_combo, end_combo))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -183,14 +183,13 @@ def trip_duration_stats(df):
 
     # display total travel time
     total_traveltime_s = df['Trip Duration'].sum()
-    print('The total travel time for all the records is {} seconds'.format(total_traveltime_s))
+    print('\nThe total travel time for all the records is {} seconds'.format(total_traveltime_s))
     format_time = time.strftime('%H:%M:%S', time.gmtime(total_traveltime_s))
     print('Which is a total of {} when converted to hours:minutes:seconds'.format(format_time))
 
     # display mean travel time
     mean_traveltime_s = df['Trip Duration'].mean()
-    print('\n')
-    print('The mean travel time for is {} seconds'.format(mean_traveltime_s))
+    print('\nThe mean travel time for is {} seconds'.format(mean_traveltime_s))
     format_meantime = time.strftime('%H:%M:%S', time.gmtime(mean_traveltime_s))
     print('Which is a total of {} when converted to hours:minutes:seconds'.format(format_meantime))
 
