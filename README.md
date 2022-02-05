@@ -1,17 +1,20 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
 ### Date created
-Include the date you created this project and README file.
+The project was created on January 24,2002 and this README file was created on February 5, 2022.
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+Explore US Bikeshare is an interactive program, developed with python. The program allows users to explore bikeshare data from three cities (Chicago, Washington, and New York City) that covers the first six months of 2017. Users are first prompted to choose which city data they would like to explore. Then users can choose whether they would like to filter the further by month or day of the week. After the data is filtered, users are given the option to display the raw data. Subsequently, the program will display description statistics.
 
 ### Files used
-Include the files used
+Files used for this project include:
+chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I referenced the following links:
+(1) https://stackoverflow.com/questions/53037698/how-can-i-find-the-most-frequent-two-column-combination-in-a-dataframe-in-python
+(2) https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.idxmax.html
+(3) https://stackoverflow.com/questions/47871270/is-there-anyway-to-convert-those-int-into-time
